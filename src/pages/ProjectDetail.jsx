@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link ,useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import {
   getProjectById,
@@ -42,7 +42,7 @@ const ProjectDetail = () => {
   });
   const [taskErrors, setTaskErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
-
+const navigate = useNavigate();
   const fetchAll = async () => {
     try {
       const [projectRes, progressRes, tasksRes, usersRes] = await Promise.all([
@@ -217,20 +217,24 @@ const ProjectDetail = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {tasks.map((t) => (
-                    <tr key={t._id}>
-                      <td>{t.title}</td>
-                      <td>{t.assignedTo?.name}</td>
-                      <td>
-                        <span className={`badge ${priorityBadge(t.priority)}`}>{t.priority}</span>
-                      </td>
-                      <td>
-                        <span className={`badge ${statusBadge(t.status)}`}>{t.status}</span>
-                      </td>
-                      <td>{new Date(t.deadline).toLocaleDateString()}</td>
-                    </tr>
-                  ))}
-                </tbody>
+  {tasks.map((t) => (
+    <tr
+      key={t._id}
+      style={{ cursor: 'pointer' }}
+      onClick={() => navigate(`/admin/tasks/${t._id}`)}
+    >
+      <td>{t.title}</td>
+      <td>{t.assignedTo?.name}</td>
+      <td>
+        <span className={`badge ${priorityBadge(t.priority)}`}>{t.priority}</span>
+      </td>
+      <td>
+        <span className={`badge ${statusBadge(t.status)}`}>{t.status}</span>
+      </td>
+      <td>{new Date(t.deadline).toLocaleDateString()}</td>
+    </tr>
+  ))}
+</tbody>
               </table>
             )}
           </div>

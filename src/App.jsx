@@ -12,6 +12,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import MemberDashboard from './pages/MemberDashboard';
 import ProjectDetail from './pages/ProjectDetail';
 import NotFound from './pages/NotFound';
+import AdminTaskDetail from './pages/AdminTaskDetail';
 const HomeRedirect = () => {
   const { user, loading } = useAuth();
   if (loading) return null;
@@ -66,6 +67,14 @@ function App() {
   element={
     <PrivateRoute allowedRoles={['member']}>
       <TaskDetail />
+    </PrivateRoute>
+  }
+/>
+<Route
+  path="/admin/tasks/:id"
+  element={
+    <PrivateRoute allowedRoles={['admin']}>
+      <AdminTaskDetail />
     </PrivateRoute>
   }
 />
