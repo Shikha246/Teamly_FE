@@ -67,6 +67,19 @@ const Login = () => {
             </button>
           </form>
           <p className="text-center mt-3 mb-0">
+  First time setup? <Link to="/setup-admin">Register as Admin</Link>
+</p>
+<hr className="my-3" />
+<div className="text-center small text-muted">
+  <p className="mb-1">
+    <strong>Admins</strong> can create the first admin account and manage projects/tasks.
+  </p>
+  <p className="mb-0">
+    <strong>Team Members</strong> don't self-register — your Admin creates your login and
+    shares your email and password with you directly.
+  </p>
+</div>
+          <p className="text-center mt-3 mb-0">
             First time setup? <Link to="/setup-admin">Register as Admin</Link>
           </p>
         </div>
