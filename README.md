@@ -59,8 +59,8 @@ team-task-manager/
 
 ### 1. Clone the repo
 \`\`\`bash
-git clone https://github.com/Shikha246/team-task-manager.git
-cd team-task-manager
+git clone https://github.com/Shikha246/Teamly_FE.git
+cd teamly
 \`\`\`
 
 ### 2. Backend setup
