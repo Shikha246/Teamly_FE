@@ -33,8 +33,8 @@ A full-stack MERN application for teams to manage projects and tasks, with role-
 
 ## Project Structure
 ```
-team-task-manager/
-├── server/          # Express + MongoDB backend
+teamly/
+├── teamly_BE/          # Express + MongoDB backend
 │   ├── config/      # DB connection
 │   ├── controllers/ # Route logic
 │   ├── middleware/  # Auth, validation, error handling
@@ -42,7 +42,7 @@ team-task-manager/
 │   ├── routes/      # API routes
 │   ├── utils/       # Helper functions
 │   └── index.js     # App entry point
-└── client/          # React + Vite frontend
+└── teamly_FE/          # React + Vite frontend
     ├── src/
     │   ├── api/         # Axios instance + API service calls
     │   ├── components/  # Reusable components (Navbar, PrivateRoute)
@@ -60,16 +60,16 @@ team-task-manager/
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/Shikha246/Teamly_FE.git
-cd teamly
+cd Teamly_frontend
 ```
 
 ### 2. Backend setup
 ```bash
-cd server
+cd Teamly_backend
 npm install
 ```
 
-Create a \`.env\` file in \`server/\`:
+Create a \`.env\` file in \`Teamly_backend/\`:
 ```
 PORT=5000
 MONGO_URI=your_mongodb_atlas_connection_string
@@ -86,7 +86,7 @@ npm run dev
 
 ### 3. Frontend setup
 ```bash
-cd ../client
+cd ../Teamly
 npm install
 ```
 
