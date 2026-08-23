@@ -66,16 +66,13 @@ const Login = () => {
               {submitting ? 'Logging in...' : 'Login'}
             </button>
           </form>
-          <p className="text-center mt-3 mb-0">
-  First time setup? <Link to="/setup-admin">Register as Admin</Link>
-</p>
 <hr className="my-3" />
 <div className="text-center small text-muted">
   <p className="text-center mt-3 mb-0">
-  First time setup? <Link to="/setup-admin">Register as Admin</Link>
+ <strong> First time setup?</strong> <Link to="/setup-admin">Register as Admin</Link>
 </p>
 <p className="text-center small text-muted mt-2 mb-0">
-  Team members: ask your Admin for your login.
+  <strong>Team members:</strong> ask your Admin for your login.
 </p>
 </div>
           
