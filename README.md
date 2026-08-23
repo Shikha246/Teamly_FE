@@ -120,7 +120,7 @@ Fill in your actual live URLs at the top before submitting.
 # API Documentation
 
 Base URL (local): `http://localhost:5000/api`
-Base URL (production): `https://your-backend-url.vercel.app/api`
+Base URL (production): `https://github.com/Shikha246/Teamly_BE.git`
 
 All protected routes require a header:
 `Authorization: Bearer <token>`
@@ -194,7 +194,7 @@ All protected routes require a header:
   "comments": []
 }
 ```
-```
+
 
 ### 12.3 — ER Diagram
 
