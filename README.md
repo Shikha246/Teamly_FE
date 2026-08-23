@@ -116,7 +116,7 @@ Fill in your actual live URLs at the top before submitting.
 
 ### 12.2 — `docs/API.md`
 
-```markdown
+```
 # API Documentation
 
 Base URL (local): `http://localhost:5000/api`
@@ -160,17 +160,17 @@ All protected routes require a header:
 | DELETE | /tasks/:id | Admin | Delete a task |
 
 ## Error Response Format
-\`\`\`json
+```json
 {
   "message": "Description of the error",
   "errors": [ { "field": "email", "message": "Valid email is required" } ]
 }
-\`\`\`
+```
 
 ## Sample Request/Response
 
 **POST /tasks**
-\`\`\`json
+```json
 // Request
 {
   "title": "Design homepage mockup",
@@ -193,7 +193,7 @@ All protected routes require a header:
   "deadlineHistory": [],
   "comments": []
 }
-\`\`\`
+```
 ```
 
 ### 12.3 — ER Diagram
