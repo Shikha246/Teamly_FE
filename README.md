@@ -3,7 +3,7 @@
 A full-stack MERN application for teams to manage projects and tasks, with role-based access for Admins and Team Members.
 
 ## Live Links
-- Frontend: [Link](https://teamly-fe.vercel.app/login)
+- Frontend: [Link](https://teamly-fe.vercel.app/)
 - Backend API: [Link](https://teamly-be.vercel.app/)
 - GitHub Repo: [Link](https://github.com/Shikha246/Teamly_FE.git)
 
