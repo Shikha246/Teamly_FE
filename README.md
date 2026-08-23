@@ -58,47 +58,47 @@ team-task-manager/
 - A MongoDB Atlas account (or local MongoDB)
 
 ### 1. Clone the repo
-\`\`\`bash
+```bash
 git clone https://github.com/Shikha246/Teamly_FE.git
 cd teamly
-\`\`\`
+```
 
 ### 2. Backend setup
-\`\`\`bash
+```bash
 cd server
 npm install
-\`\`\`
+```
 
 Create a \`.env\` file in \`server/\`:
-\`\`\`
+```
 PORT=5000
 MONGO_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_long_random_secret
 JWT_EXPIRES_IN=7d
 CLIENT_URL=http://localhost:5173
 NODE_ENV=development
-\`\`\`
+```
 
 Run the server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ### 3. Frontend setup
-\`\`\`bash
+```bash
 cd ../client
 npm install
-\`\`\`
+```
 
 Create a \`.env\` file in \`client/\`:
-\`\`\`
+```
 VITE_API_URL=http://localhost:5000/api
-\`\`\`
+```
 
 Run the frontend:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 Visit \`http://localhost:5173\`.
 
@@ -110,7 +110,7 @@ Visit \`http://localhost:5173\`.
 
 ## Deadline History Feature
 Whenever an Admin changes a task's deadline, the system logs the previous deadline, the new deadline, who changed it, and when — visible on the Task Detail page under "Deadline History." This is powered by an embedded `deadlineHistory` array on each Task document.
-\`\`\`
+```
 
 Fill in your actual live URLs at the top before submitting.
 
