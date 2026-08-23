@@ -5,7 +5,7 @@ A full-stack MERN application for teams to manage projects and tasks, with role-
 ## Live Links
 - Frontend: [Link](https://teamly-fe.vercel.app/login)
 - Backend API: [Link](https://teamly-be.vercel.app/)
-- GitHub Repo: https://github.com/Shikha246/team-task-manager
+- GitHub Repo: [Link](https://github.com/Shikha246/Teamly_FE.git)
 
 ## Features
 
