@@ -32,7 +32,7 @@ A full-stack MERN application for teams to manage projects and tasks, with role-
 - **Deployment:** Vercel (frontend + backend as separate projects)
 
 ## Project Structure
-\`\`\`
+```
 team-task-manager/
 ├── server/          # Express + MongoDB backend
 │   ├── config/      # DB connection
@@ -49,7 +49,7 @@ team-task-manager/
     │   ├── context/     # Auth context
     │   └── pages/       # Route-level pages
     └── vite.config.js
-\`\`\`
+```
 
 ## Local Installation
 
