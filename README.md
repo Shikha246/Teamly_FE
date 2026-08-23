@@ -100,7 +100,7 @@ Run the frontend:
 npm run dev
 ```
 
-Visit \`http://localhost:5173\`.
+Visit `http://localhost:5173`
 
 ### 4. First-time setup
 - Go to \`/setup-admin\` to create the first Admin account (this route only works when no users exist yet).
@@ -110,13 +110,9 @@ Visit \`http://localhost:5173\`.
 
 ## Deadline History Feature
 Whenever an Admin changes a task's deadline, the system logs the previous deadline, the new deadline, who changed it, and when — visible on the Task Detail page under "Deadline History." This is powered by an embedded `deadlineHistory` array on each Task document.
-```
 
-Fill in your actual live URLs at the top before submitting.
 
-### 12.2 — `docs/API.md`
 
-```
 # API Documentation
 
 Base URL (local): `http://localhost:5000/api`
